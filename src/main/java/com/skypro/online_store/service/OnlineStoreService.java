@@ -1,22 +1,22 @@
 package com.skypro.online_store.service;
 
-import com.skypro.online_store.model.Basket;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 @SessionScope
 public class OnlineStoreService {
-    private Basket basket;
+    private final List<Integer> idsOrder = new ArrayList<>();
 
-    public Basket addOrderIds(List<Integer> ids) {
-        return basket = new Basket(ids);
+    public void addOrderIds(List<Integer> ids) {
+        idsOrder.addAll(ids);
     }
 
-    public Basket getOrderIds() {
-        return basket;
+    public List<Integer> getOrderIds() {
+        return idsOrder;
     }
 
 }

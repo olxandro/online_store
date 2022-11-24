@@ -1,6 +1,5 @@
 package com.skypro.online_store.controller;
 
-import com.skypro.online_store.model.Basket;
 import com.skypro.online_store.service.OnlineStoreService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,12 +14,12 @@ public class OnlineStoreController {
     }
 
     @GetMapping("/order/get")
-    public Basket getOrdersId() {
+    public List<Integer> getOrdersIds() {
         return onlineStoreService.getOrderIds();
     }
 
-    @RequestMapping("/order/add ")
-    public Basket addOrders(@RequestParam("id") List<Integer> ids) {
-        return onlineStoreService.addOrderIds(ids);
+    @GetMapping("/order/add")
+    public void addOrdersId(@RequestParam("id") List<Integer> ids) {
+        onlineStoreService.addOrderIds(ids);
     }
 }

@@ -1,5 +1,35 @@
 GET http://localhost:8080/store/order/get
 
+<> 2022-11-24T231510.200.json
+
+###
+
+GET http://localhost:8080/store/order/add?id=1&id=12&id=25
+
+###
+
+GET http://localhost:8080/store/order/add?id=1&id=12&id=25
+
+###
+
+GET http://localhost:8080/store/order/add?id=1&id=12&id=25
+
+###
+
+GET http://localhost:8080/store/order/get
+
+<> 2022-11-24T230757.200.json
+
+###
+
+GET http://localhost:8080/store/order/add?id=1&id=12&id=25
+
+<> 2022-11-24T230722.404.json
+
+###
+
+GET http://localhost:8080/store/order/get
+
 ###
 
 GET http://localhost:8080/store/order/add?id=1&id=12&id=25
