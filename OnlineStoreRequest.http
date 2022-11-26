@@ -1,0 +1,5 @@
+### получение всех добавленных ID
+GET http://localhost:8080/store/order/get
+
+### добавление заказов в корзину
+GET http://localhost:8080/store/order/add?id=1&id=12&id=25
